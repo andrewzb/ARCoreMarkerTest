@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 4654016614208308007
+  m_GuidHigh: 1136137287450649484
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5126619855747696870
+      m_GuidHigh: 13893445167827826845
+    m_SerializedTextureGuid:
+      m_GuidLow: 6207223381921605327
+      m_GuidHigh: 11431855018898794088
+    m_Size: {x: 0.1, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: ARMarker1
+    m_Texture: {fileID: 2800000, guid: 50efa6cf7cc7562468a63a35921ba69e, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5678327507057634417
+      m_GuidHigh: 4958313446647050112
+    m_SerializedTextureGuid:
+      m_GuidLow: 2969236521983329625
+      m_GuidHigh: 7336584250650867081
+    m_Size: {x: 0.1, y: 0.1}
+    m_SpecifySize: 1
+    m_Name: ARMarker2
+    m_Texture: {fileID: 2800000, guid: 92eec559d8e229348935c54c81c8d065, type: 3}
