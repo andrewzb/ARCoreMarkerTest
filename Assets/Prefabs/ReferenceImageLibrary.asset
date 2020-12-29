@@ -35,3 +35,53 @@ MonoBehaviour:
     m_SpecifySize: 1
     m_Name: ARMarker2
     m_Texture: {fileID: 2800000, guid: 92eec559d8e229348935c54c81c8d065, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4874064608812090183
+      m_GuidHigh: 12157235432676561538
+    m_SerializedTextureGuid:
+      m_GuidLow: 7661953905333347255
+      m_GuidHigh: 15931053148396062073
+    m_Size: {x: 0.1, y: 0.10556054}
+    m_SpecifySize: 1
+    m_Name: pigeon
+    m_Texture: {fileID: 2800000, guid: 6ccfa3b7ba7b6a54790504a06e7816dd, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4697271155701117624
+      m_GuidHigh: 883209933728788385
+    m_SerializedTextureGuid:
+      m_GuidLow: 4014016667294672187
+      m_GuidHigh: 4512014069997712090
+    m_Size: {x: 0.1, y: 0.06571056}
+    m_SpecifySize: 1
+    m_Name: book
+    m_Texture: {fileID: 2800000, guid: 4898a53ba6e437b4da32c717e4e49d3e, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5076835784983477845
+      m_GuidHigh: 85067358740953999
+    m_SerializedTextureGuid:
+      m_GuidLow: 7765362038111145116
+      m_GuidHigh: 10118845808544272409
+    m_Size: {x: 0.1, y: 0.13618678}
+    m_SpecifySize: 1
+    m_Name: bookCover
+    m_Texture: {fileID: 2800000, guid: 89eb0c9c1ba16bc419503ba3a65c6d8c, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4955881445551233440
+      m_GuidHigh: 16973923585361442719
+    m_SerializedTextureGuid:
+      m_GuidLow: 8256441735794024822
+      m_GuidHigh: 12770510410035106233
+    m_Size: {x: 0.1, y: 0.086666666}
+    m_SpecifySize: 1
+    m_Name: forest
+    m_Texture: {fileID: 2800000, guid: a2b66176c6037294b911928e8ef739b1, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5534918562474711274
+      m_GuidHigh: 2887012130556656800
+    m_SerializedTextureGuid:
+      m_GuidLow: 16714076618489515556
+      m_GuidHigh: 2791865793547867531
+    m_Size: {x: 0.1, y: 0.099609375}
+    m_SpecifySize: 1
+    m_Name: markerBig
+    m_Texture: {fileID: 2800000, guid: 29bace245421e7f48b15fcb425b3be26, type: 3}

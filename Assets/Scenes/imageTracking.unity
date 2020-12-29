@@ -518,6 +518,11 @@ MonoBehaviour:
   placeablePrefabs:
   - {fileID: 5059467303704216138, guid: 45ed2e853ccb60c49a5a8b9b7f47fe9f, type: 3}
   - {fileID: 6608047065948140466, guid: 9a7c35de2c5d7344d84dd312e9841c3e, type: 3}
+  - {fileID: 6608047065948140466, guid: 199b1c314bb37c3439f8ce937dec2731, type: 3}
+  - {fileID: 3193490865984803690, guid: 8095cc97271376f4a8b441cd794384c9, type: 3}
+  - {fileID: 1203802893159555992, guid: e396457fb5678574aa4ce5ac2982f9bc, type: 3}
+  - {fileID: 6608047065948140466, guid: 5dcda2a5359019149a25d65646904808, type: 3}
+  - {fileID: 4574644640772767706, guid: bc0748672d7100f49bc56e65e2dff61b, type: 3}
   text: {fileID: 94637593}
 --- !u!1 &1929327829
 GameObject:
@@ -537,7 +542,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1929327830
 MonoBehaviour:
   m_ObjectHideFlags: 0
