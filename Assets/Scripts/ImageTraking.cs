@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.XR;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
 
 
 [RequireComponent(typeof(ARTrackedImageManager))]
@@ -13,7 +11,6 @@ public class ImageTraking : MonoBehaviour
     [SerializeField]
     private GameObject[] placeablePrefabs;
 
-    public Text text;
     private Dictionary<string, GameObject> spawnePrefabs = new Dictionary<string, GameObject>();
     private ARTrackedImageManager trackableImageManager;
 
@@ -43,20 +40,17 @@ public class ImageTraking : MonoBehaviour
 
     private void ImageChange(ARTrackedImagesChangedEventArgs eventArgs)
     {
+        foreach (ARTrackedImage trackedImage in eventArgs.removed)
+        {
+            spawnePrefabs[trackedImage.referenceImage.name].SetActive(false);
+        }
         foreach (ARTrackedImage trackedImage in eventArgs.added)
         {
-            text.text = "add";
             UpdateImage(trackedImage);
         }
         foreach (ARTrackedImage trackedImage in eventArgs.updated)
         {
-            text.text = "update";
             UpdateImage(trackedImage);
-        }
-        foreach (ARTrackedImage trackedImage in eventArgs.removed)
-        {
-            text.text = "remove";
-            spawnePrefabs[trackedImage.referenceImage.name].SetActive(false);
         }
     }
 
@@ -65,18 +59,19 @@ public class ImageTraking : MonoBehaviour
         string name = trackedImage.referenceImage.name;
         var tran = trackedImage.transform;
         GameObject prefab = spawnePrefabs[name];
-        prefab.transform.position = tran.position;
-        prefab.transform.forward = Vector3.up; 
-        //prefab.transform.rotation = tran.rotation;
-        prefab.SetActive(true);
-        /*
-        foreach (GameObject item in spawnePrefabs.Values)
+        if (trackedImage.trackingState == TrackingState.Tracking)
         {
-            if (item.name != name)
-            {
-                item.SetActive(false);
-            }
+            prefab.transform.position = tran.position;
+            prefab.transform.forward = Vector3.up; 
+            prefab.SetActive(true);
         }
-        */
+        if (trackedImage.trackingState == TrackingState.None)
+        {
+            prefab.SetActive(false);
+        }
+        if (trackedImage.trackingState == TrackingState.Limited)
+        {
+            prefab.SetActive(false);
+        }
     }
 }
